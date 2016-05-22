@@ -1,0 +1,10 @@
+[
+null,
+{"id":1,"expanded":true,"name":"MAP001","order":7,"parentId":4,"scrollX":1037,"scrollY":893},
+{"id":2,"expanded":true,"name":"時の牢獄","order":1,"parentId":0,"scrollX":1020.5999999999999,"scrollY":1026.6},
+{"id":3,"expanded":true,"name":"MAP003","order":4,"parentId":6,"scrollX":827.4,"scrollY":577.8},
+{"id":4,"expanded":false,"name":"廃墟","order":5,"parentId":0,"scrollX":1379,"scrollY":1043},
+{"id":5,"expanded":false,"name":"迷いの森","order":6,"parentId":4,"scrollX":1021,"scrollY":877},
+{"id":6,"expanded":true,"name":"MAP006","order":2,"parentId":0,"scrollX":832,"scrollY":640},
+{"id":7,"expanded":false,"name":"MAP007","order":3,"parentId":6,"scrollX":832,"scrollY":640}
+]
