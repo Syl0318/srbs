@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"battlerName":"エリック","characterIndex":0,"characterName":"エリック","classId":1,"equips":[1,1,2,3],"faceIndex":0,"faceName":"エリック","traits":[],"initialLevel":1,"maxLevel":99,"name":"エリック","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"エリック","characterIndex":0,"characterName":"エリック","classId":1,"equips":[0,1,2,3],"faceIndex":0,"faceName":"エリック","traits":[],"initialLevel":1,"maxLevel":99,"name":"エリック","nickname":"","note":"","profile":""},
 {"id":2,"battlerName":"フェリミア","characterIndex":0,"characterName":"フェリミア","classId":2,"equips":[2,0,3,3],"faceIndex":0,"faceName":"フェリミア","traits":[],"initialLevel":1,"maxLevel":99,"name":"フェリミア","nickname":"","note":"","profile":""},
 {"id":3,"battlerName":"アクア","characterIndex":0,"characterName":"アクア","classId":3,"equips":[3,0,4,3],"faceIndex":1,"faceName":"People5","traits":[],"initialLevel":1,"maxLevel":99,"name":"アクア","nickname":"","note":"","profile":""},
 {"id":4,"battlerName":"グラハム","characterIndex":0,"characterName":"グラハム","classId":4,"equips":[4,5,6,3],"faceIndex":0,"faceName":"グラハム","traits":[],"initialLevel":1,"maxLevel":99,"name":"グラハム","nickname":"","note":"","profile":""},
