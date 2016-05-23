@@ -12,5 +12,6 @@ var $plugins =
 {"name":"KinokoPlugin3","status":true,"description":"スキルごとに命中率、クリティカル率を変動させることが可能になります。","parameters":{}},
 {"name":"KinokoPlugin4","status":true,"description":"ステートのプロパティを増やします。","parameters":{}},
 {"name":"DP_FixEscapeRatio","status":true,"description":"逃走の成功確率を設定できます。v1.00","parameters":{"Use Param":"False","Ratio":"80"}},
-{"name":"KGN_HitMinusEva","status":true,"description":"最終的な命中率を「命中率 - 回避率」にします。","parameters":{}}
+{"name":"KGN_HitMinusEva","status":true,"description":"最終的な命中率を「命中率 - 回避率」にします。","parameters":{}},
+{"name":"Krd_FloorDamage","status":true,"description":"フロアダメージの値を変更します。","parameters":{"FloorDamage":"1"}}
 ];
