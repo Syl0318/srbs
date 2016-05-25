@@ -9,9 +9,10 @@ var $plugins =
 {"name":"VersionSpecified","status":true,"description":"【MMP ver.1.0】タイトル画面にバージョンを明記します。","parameters":{"version":"Version 1.00","fontSize":"20","fontColor":"rgb(255, 255, 255)","windowX":"540","windowY":"560"}},
 {"name":"MrTS_PartyManager","status":true,"description":"Allows to check and change your party.","parameters":{"In Menu":"False","Command Name":"パーティ","Party Text":"パーティ","Members Text":"待機メンバー","Required Text":"必須メンバー:","Draw TP":"False"}},
 {"name":"Passive Skill","status":true,"description":"v1.14 Adds passive skills functionality to actors.","parameters":{"Default Hide in Battle":"1","Hidden Skill Type ID in Battle":"0"}},
-{"name":"KinokoPlugin3","status":true,"description":"スキルごとに命中率、クリティカル率を変動させることが可能になります。","parameters":{}},
+{"name":"KinokoPlugin3","status":true,"description":"スキルごとに命中率、クリティカル率を変動させることが可能になります。運の差でクリティカル率が変動するようにもなります。","parameters":{}},
 {"name":"KinokoPlugin4","status":true,"description":"ステートのプロパティを増やします。","parameters":{}},
 {"name":"DP_FixEscapeRatio","status":true,"description":"逃走の成功確率を設定できます。v1.00","parameters":{"Use Param":"False","Ratio":"80"}},
 {"name":"KGN_HitMinusEva","status":true,"description":"最終的な命中率を「命中率 - 回避率」にします。","parameters":{}},
-{"name":"Krd_FloorDamage","status":true,"description":"フロアダメージの値を変更します。","parameters":{"FloorDamage":"1"}}
+{"name":"Krd_FloorDamage","status":true,"description":"フロアダメージの値を変更します。","parameters":{"FloorDamage":"1"}},
+{"name":"SimpleMsgSideView","status":true,"description":"サイドビューバトルで技/アイテムの名前のみ表示します。","parameters":{"displayAttack":"0","position":"1"}}
 ];
