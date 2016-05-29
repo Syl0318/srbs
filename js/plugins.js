@@ -6,7 +6,7 @@ var $plugins =
 {"name":"HalfMove","status":true,"description":"半歩移動プラグイン","parameters":{"8方向移動":"OFF","イベントすり抜け":"ON","強制中無効":"OFF","角回避":"OFF","斜め移動中減速":"OFF","トリガー拡大":"ON","実歩数調整":"ON","上半分移動不可地形":"0","上半分移動不可Region":"0","下半分移動不可地形":"0","下半分移動不可Region":"0"}},
 {"name":"MessageWindowPopup","status":true,"description":"フキダシウィンドウプラグイン","parameters":{"フォントサイズ":"22","余白":"18","自動設定":"ON","フェイス倍率":"75","ウィンドウ連携":"OFF","行間":"4","ウィンドウ透過":"OFF"}},
 {"name":"MPP_SimpleEquipWindows","status":true,"description":"【MPP ver.1.2】装備画面の簡略化","parameters":{}},
-{"name":"VersionSpecified","status":true,"description":"【MMP ver.1.0】タイトル画面にバージョンを明記します。","parameters":{"version":"Version 1.20","fontSize":"20","fontColor":"rgb(255, 255, 255)","windowX":"540","windowY":"560"}},
+{"name":"VersionSpecified","status":true,"description":"【MMP ver.1.0】タイトル画面にバージョンを明記します。","parameters":{"version":"Version 1.22","fontSize":"20","fontColor":"rgb(255, 255, 255)","windowX":"540","windowY":"560"}},
 {"name":"MrTS_PartyManager","status":true,"description":"Allows to check and change your party.","parameters":{"In Menu":"False","Command Name":"パーティ","Party Text":"パーティ","Members Text":"待機メンバー","Required Text":"　","Draw TP":"False"}},
 {"name":"Passive Skill","status":true,"description":"v1.14 Adds passive skills functionality to actors.","parameters":{"Default Hide in Battle":"1","Hidden Skill Type ID in Battle":"0"}},
 {"name":"KinokoPlugin3","status":true,"description":"スキルごとに命中率、クリティカル率を変動させることが可能になります。運の差でクリティカル率が変動するようにもなります。","parameters":{}},
