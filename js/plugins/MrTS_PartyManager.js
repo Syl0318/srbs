@@ -1,10 +1,10 @@
-//=============================================================================
+﻿//=============================================================================
 // MrTS_PartyManager.js
 //=============================================================================
 
 /*:
 * @plugindesc Allows to check and change your party.
-* @author Mr. Trivel
+* @author Mr. Trivel, Agaricus Mushroom
 *
 * @param In Menu
 * @desc Is Party Manager accessible from Menu? True/False
@@ -44,7 +44,7 @@
 * Credit Mr. Trivel if using this plugin in your project.
 * Free for commercial and non-commercial projects.
 * --------------------------------------------------------------------------------
-* Version 1.0
+* Version 1.1a
 * --------------------------------------------------------------------------------
 *
 * --------------------------------------------------------------------------------
@@ -65,6 +65,9 @@
 *
 * PartyManager MenuLock - Disable command in menu (grey out)
 * PartyManager MenuUnlock - Enable command in menu
+*
+* PartyManager LeadLock [true/false] - 先頭メンバーの入れ替えを禁止とするかの設定
+*                                      （trueで入れ替え禁止、falseで入れ替え可能）
 *
 * Examples:
 * PartyManager Require 3
@@ -90,6 +93,7 @@
 * Version History
 * --------------------------------------------------------------------------------
 * 1.0 - Release
+* 1.1a- 表示領域の調整、先頭メンバーの入れ替え禁止を追加
 */
 
 (function() {
@@ -154,6 +158,10 @@
 				case 'MENUUNLOCK':
 				{
 					$gameSystem.partyManagerMenuDisabled(false);
+				} break;
+				case 'LEADLOCK':
+				{
+					$gameParty.lockLeadPartyMember(Boolean(args[1]));
 				} break;
 			}
 		}
@@ -326,6 +334,10 @@
 				}
 			}
 		}
+	};
+
+	Game_Party.prototype.lockLeadPartyMember = function(flg) {
+		this._leadLocked = flg;
 	};
 
 	Game_Party.prototype.requirePartyMemberAmount = function(amount) {
@@ -586,7 +598,9 @@
 		if (actor)
 		{
 			var rect = this.itemRect(index);
+			this.changePaintOpacity(this.isItemEnabled(index));
 			this.drawActorCharacter(actor, rect.x+24, rect.y+48);
+			this.changePaintOpacity(true);
 		}
 	};
 
@@ -612,6 +626,24 @@
 	Window_PartyManager_PartyList.prototype.processCancel = function() {
 	    this.updateInputData();
 	    this.callCancelHandler();
+	};
+
+	Window_PartyManager_PartyList.prototype.isCurrentItemEnabled = function() {
+		var actor = this.item(this.index());
+		if (actor)
+		{
+			if(this.index() == 0  && $gameParty._leadLocked) return false;
+		}
+		return true;
+	};
+
+	Window_PartyManager_PartyList.prototype.isItemEnabled = function(index) {
+		var actor = this.item(index);
+		if (actor)
+		{
+			if(index == 0  && $gameParty._leadLocked) return false;
+		}
+		return true;
 	};
 
 	//--------------------------------------------------------------------------
@@ -819,7 +851,7 @@
 	    var equips = this._actor.equips();
 	    var count = Math.min(equips.length, this.maxEquipmentLines());
 	    for (var i = 0; i < count; i++) {
-	        this.drawItemName(equips[i], x, y + this.lineHeight() * i);
+	        this.drawItemName(equips[i], x, y + this.lineHeight() * i, 225);
 	    }
 	};
 
