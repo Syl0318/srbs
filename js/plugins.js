@@ -3,17 +3,20 @@
 var $plugins =
 [
 {"name":"SRBS_Plugin","status":true,"description":"","parameters":{}},
-{"name":"HalfMove","status":true,"description":"半歩移動プラグイン","parameters":{"8方向移動":"OFF","イベントすり抜け":"ON","強制中無効":"OFF","角回避":"OFF","斜め移動中減速":"OFF","トリガー拡大":"ON","実歩数調整":"ON","上半分移動不可地形":"0","上半分移動不可Region":"0","下半分移動不可地形":"0","下半分移動不可Region":"0"}},
+{"name":"HalfMove","status":true,"description":"半歩移動プラグイン","parameters":{"8方向移動":"OFF","イベントすり抜け":"ON","強制中無効":"OFF","角回避":"ON","斜め移動中減速":"ON","トリガー拡大":"ON","実歩数調整":"ON","上半分移動不可地形":"0","上半分移動不可Region":"0","下半分移動不可地形":"0","下半分移動不可Region":"0"}},
 {"name":"MessageWindowPopup","status":true,"description":"フキダシウィンドウプラグイン","parameters":{"フォントサイズ":"22","余白":"18","自動設定":"ON","フェイス倍率":"75","ウィンドウ連携":"OFF","行間":"4","ウィンドウ透過":"OFF"}},
 {"name":"MPP_SimpleEquipWindows","status":true,"description":"【MPP ver.1.2】装備画面の簡略化","parameters":{}},
-{"name":"VersionSpecified","status":true,"description":"【MMP ver.1.0】タイトル画面にバージョンを明記します。","parameters":{"version":"Version 1.22","fontSize":"20","fontColor":"rgb(255, 255, 255)","windowX":"540","windowY":"560"}},
+{"name":"VersionSpecified","status":true,"description":"【MMP ver.1.0】タイトル画面にバージョンを明記します。","parameters":{"version":"Version 1.23","fontSize":"20","fontColor":"rgb(255, 255, 255)","windowX":"540","windowY":"560"}},
 {"name":"MrTS_PartyManager","status":true,"description":"Allows to check and change your party.","parameters":{"In Menu":"False","Command Name":"パーティ","Party Text":"パーティ","Members Text":"待機メンバー","Required Text":"　","Draw TP":"False"}},
 {"name":"Passive Skill","status":true,"description":"v1.14 Adds passive skills functionality to actors.","parameters":{"Default Hide in Battle":"1","Hidden Skill Type ID in Battle":"0"}},
 {"name":"KinokoPlugin3","status":true,"description":"スキルごとに命中率、クリティカル率を変動させることが可能になります。運の差でクリティカル率が変動するようにもなります。","parameters":{}},
 {"name":"KinokoPlugin4","status":true,"description":"ステートのプロパティを増やします。","parameters":{}},
+{"name":"KinokoPlugin11","status":true,"description":"ダメージ床で受けるダメージを調整するプラグインです。","parameters":{"defaultDamage":"1"}},
 {"name":"DP_FixEscapeRatio","status":true,"description":"逃走の成功確率を設定できます。v1.00","parameters":{"Use Param":"False","Ratio":"80"}},
 {"name":"KGN_HitMinusEva","status":true,"description":"最終的な命中率を「命中率 - 回避率」にします。","parameters":{}},
-{"name":"Krd_FloorDamage","status":true,"description":"フロアダメージの値を変更します。","parameters":{"FloorDamage":"1"}},
 {"name":"SimpleMsgSideView","status":true,"description":"サイドビューバトルで技/アイテムの名前のみ表示します。","parameters":{"displayAttack":"0","position":"1"}},
-{"name":"TMVplugin","status":true,"description":"パーティの先頭にいるアクターの並び替えを禁止します。","parameters":{}}
+{"name":"TMVplugin","status":true,"description":"パーティの先頭にいるアクターの並び替えを禁止します。","parameters":{}},
+{"name":"EncountControl","status":true,"description":"エンカウント率の計算式を変更し、デフォルトでは\r\n大きすぎるエンカウント率の振れ幅を制御できます。","parameters":{"min_encount":"75","max_encount":"125"}},
+{"name":"DamageAbsorb","status":true,"description":"与・被ダメージをＨＰ・ＭＰに変換するプラグイン。","parameters":{}},
+{"name":"WeaponSkill","status":true,"description":"武器ごとに通常攻撃のスキルIDを変更します。","parameters":{}}
 ];
